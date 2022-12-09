@@ -1,0 +1,21 @@
+Created by testinium on 9.12.2022
+
+This is a concept file with following syntax for each concept.
+# Sayfa açılır navigasyon only this time tıklanır
+* "com.android.permissioncontroller:id/permission_allow_one_time_button" id'li elemente tikla
+# Arama kısmına tıklanır üst tarafta bulunan arama kısmına pantalon yazılır ve enter yapılır
+* "//android.widget.FrameLayout[@content-desc=\"Arama\"]/android.widget.ImageView" xpath'li elemente tikla
+* "com.mobisoft.beymen:id/search_query_section" id'li elemente tikla
+* "com.mobisoft.beymen:id/search_bar_text" id'li elemente "pantolon" text degerini gonder
+# Filtre butonuna tıklanır ürün çeşidine tıklanır jean pantolon seçilir
+* "com.mobisoft.beymen:id/tv_filter" id'li elemente tikla
+* "//*[@text='Ürün Çeşidi']" xpath'li elemente tikla
+* "//*[@text='Jean Pantolon']" xpath'li elemente tikla
+# Ürün lisetele tıklanır ve ürün seçilir
+* "com.mobisoft.beymen:id/btn_apply_filter" id'li elemente tikla
+* "com.mobisoft.beymen:id/productName" id'li elemente tikla
+# Sepete ekle butonu geldiği kontrol edilir
+* "com.mobisoft.beymen:id/rvVariantSelection" id'li elementin geldiğini kontrol et
+# Favoriye tıklanır ve kullanış giriş ekranın geldiği kontrol edilir
+* "com.mobisoft.beymen:id/addToFavoriteButton" id'li elemente tikla
+* "com.mobisoft.beymen:id/loginButton" id'li elementin geldiğini kontrol et
